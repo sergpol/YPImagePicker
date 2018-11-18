@@ -91,7 +91,7 @@ class YPAssetViewContainer: UIView {
             let z = zoomableView.zoomScale
             shouldCropToSquare = (z >= 1 && z < zoomableView.squaredZoomScale)
         }
-        zoomableView?.fitImage(shouldCropToSquare, animated: true)
+        zoomableView?.fitImage(false, animated: true)
     }
     
     
